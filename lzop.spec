@@ -1,13 +1,14 @@
 %define name lzop
-%define version 1.01
-%define release %mkrel 7
+%define version 1.02
+%define prerel rc1
+%define fversion 1.02%prerel
+%define release %mkrel 0.%prerel.1
 
 Summary: LZO fast file compressor
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
-Patch: lzop-1.01-lzo2.patch
+Source0: %{name}-%{fversion}.tar.bz2
 License: GPL
 Group: Archiving/Compression
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -25,9 +26,7 @@ lzop was designed with the following goals in mind:
   3) portability
 
 %prep
-%setup -q
-%patch -p1 -b .lzo2
-autoconf
+%setup -q -n %name-%fversion
 
 %build
 export CPPFLAGS="-D_FILE_OFFSET_BITS=64 -I%_includedir/lzo"
