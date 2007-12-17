@@ -11,7 +11,6 @@ Release: %{release}
 Source0: %{name}-%{fversion}.tar.bz2
 License: GPL
 Group: Archiving/Compression
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: liblzo-devel >= 2.00
 URL: http://www.oberhumer.com/opensource/lzop/
 
