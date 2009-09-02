@@ -2,7 +2,7 @@
 %define version 1.02
 %define prerel rc1
 %define fversion 1.02%prerel
-%define release %mkrel 0.%prerel.1
+%define release %mkrel 0.%prerel.2
 
 Summary: LZO fast file compressor
 Name: %{name}
