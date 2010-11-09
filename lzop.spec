@@ -1,14 +1,13 @@
 %define name lzop
-%define version 1.02
-%define prerel rc1
-%define fversion 1.02%prerel
-%define release %mkrel -c %prerel 3
+%define version 1.03
+%define fversion %version
+%define release %mkrel 1
 
 Summary: LZO fast file compressor
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{fversion}.tar.bz2
+Source0: %{name}-%{fversion}.tar.gz
 License: GPLv2+
 Group: Archiving/Compression
 BuildRoot: %{_tmppath}/%{name}-buildroot
