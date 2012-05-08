@@ -1,7 +1,7 @@
 %define name lzop
 %define version 1.03
 %define fversion %version
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: LZO fast file compressor
 Name: %{name}
