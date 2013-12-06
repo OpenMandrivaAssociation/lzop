@@ -1,7 +1,7 @@
 Summary:	LZO fast file compressor
 Name:		lzop
 Version:	1.03
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Archiving/Compression
 Url:		http://www.oberhumer.com/opensource/lzop/
