@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		Archiving/Compression
 Url:		http://www.oberhumer.com/opensource/lzop/
 Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	liblzo-devel >= 2.00
+BuildRequires:	lzo-devel >= 2.00
 
 %description
 lzop is a file compressor similar to gzip. Its main advantages over gzip
@@ -23,7 +23,7 @@ lzop was designed with the following goals in mind:
 
 %build
 export CPPFLAGS="-D_FILE_OFFSET_BITS=64 -I%_includedir/lzo"
-%configure2_5x
+%configure
 %make
 
 %install
