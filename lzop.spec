@@ -1,3 +1,5 @@
+%define _disable_rebuild_configure 1
+
 Summary:	LZO fast file compressor
 Name:		lzop
 Version:	1.03
