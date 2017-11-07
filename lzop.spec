@@ -2,8 +2,8 @@
 
 Summary:	LZO fast file compressor
 Name:		lzop
-Version:	1.03
-Release:	12
+Version:	1.04
+Release:	1
 License:	GPLv2+
 Group:		Archiving/Compression
 Url:		http://www.oberhumer.com/opensource/lzop/
@@ -35,4 +35,3 @@ export CPPFLAGS="-D_FILE_OFFSET_BITS=64 -I%_includedir/lzo"
 %doc README COPYING AUTHORS NEWS THANKS doc/lzop.ps doc/lzop.html
 %{_bindir}/lzop
 %{_mandir}/man1/lzop.1*
-
