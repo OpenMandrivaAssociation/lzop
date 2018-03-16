@@ -32,6 +32,6 @@ export CPPFLAGS="-D_FILE_OFFSET_BITS=64 -I%_includedir/lzo"
 %makeinstall_std
 
 %files
-%doc README COPYING AUTHORS NEWS THANKS doc/lzop.ps doc/lzop.html
+%doc %{_docdir}/%{name}
 %{_bindir}/lzop
 %{_mandir}/man1/lzop.1*
