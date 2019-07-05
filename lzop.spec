@@ -1,9 +1,11 @@
 %define _disable_rebuild_configure 1
 
+%global optflags %{optflags} -O3
+
 Summary:	LZO fast file compressor
 Name:		lzop
 Version:	1.04
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Archiving/Compression
 Url:		http://www.oberhumer.com/opensource/lzop/
@@ -21,15 +23,15 @@ lzop was designed with the following goals in mind:
   3) portability
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 export CPPFLAGS="-D_FILE_OFFSET_BITS=64 -I%_includedir/lzo"
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc %{_docdir}/%{name}
