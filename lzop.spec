@@ -8,7 +8,7 @@ Version:	1.04
 Release:	5
 License:	GPLv2+
 Group:		Archiving/Compression
-Url:		http://www.oberhumer.com/opensource/lzop/
+Url:		https://www.oberhumer.com/opensource/lzop/
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	lzo-devel >= 2.00
 
