@@ -10,6 +10,11 @@ License:	GPLv2+
 Group:		Archiving/Compression
 Url:		https://www.oberhumer.com/opensource/lzop/
 Source0:	%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	lzo-devel >= 2.00
 
 %description
